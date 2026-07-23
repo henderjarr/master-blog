@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "author": "John Doe",
-    "title": "First Post",
-    "content": "This is my first post."
+    "author": "Alice",
+    "title": "Big book of tea",
+    "content": "This book has 1000 different types of tea"
   },
   {
     "id": 2,
-    "author": "Jane Doe",
-    "title": "Second Post",
-    "content": "This is another post."
+    "author": "Ralf",
+    "title": "ralfs book",
+    "content": "this book is about ralf"
   },
   {
     "id": 3,
-    "author": "bob",
-    "title": "the book",
-    "content": "was good\r\n"
+    "author": "Jarrod",
+    "title": "My bOOK",
+    "content": "this is about me\r\n"
   }
 ]

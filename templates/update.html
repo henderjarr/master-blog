@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div><a class="button-generic" href="{{ url_for('index') }}">Back to Home</a></div>
+<form class="add-book-form" method="POST" action="/update/{{ post.id }}">
+    <label  for="name">Enter the Book details:</label>
+    <input type="text" id="name" name="Author" placeholder="Author" required value="{{ post.author }}">
+    <input  type="text" id="title" name="Title" placeholder="Title" required value="{{ post.title }}">
+    <textarea  type="text" id="content" name="Content" placeholder="Content" required>{{ post.content }}</textarea>
+    <button class="green-button" type="submit">Update</button>
+</form>
+
+{% endblock %}

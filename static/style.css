@@ -18,6 +18,14 @@ h1 {
     border-radius: 8px;
 }
 
+.new-book-button {
+    display:fixed;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    margin: 20px auto;
+}
+
 .button-generic {
     display: inline-block;
     background-color: #1039ee;
@@ -28,15 +36,15 @@ h1 {
     transition: background-color 0.3s ease;
 }
 
-.add-book-button {
-    display: inline-block;
+.green-button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    margin-bottom: 20px;
 }
 
 .delete-button {
@@ -47,6 +55,13 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+}
+
+.button-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
 }
 
 .post h2 {

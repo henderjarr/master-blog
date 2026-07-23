@@ -45,5 +45,31 @@ def delete(post_id):
     return redirect(url_for('index'))
 
 
+@app.route('/update/<int:post_id>', methods=['GET', 'POST'])
+def update(post_id):
+    def fetch_post_by_id(post_id):
+        for post in blog_posts:
+            if post['id'] == post_id:
+                return post
+        return None
+
+    post = fetch_post_by_id(post_id)
+
+    if post is None:
+        return "Post not found", 404
+
+    if request.method == 'POST':
+        post['author'] = request.form.get('Author')
+        post['title'] = request.form.get('Title')
+        post['content'] = request.form.get('Content')
+
+        with open('blog_posts.json', 'w', encoding='utf-8') as write_file:
+            json.dump(blog_posts, write_file, indent=2)
+
+        return redirect(url_for('index'))
+
+    return render_template('update.html', post=post)
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
