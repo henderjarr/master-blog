@@ -1,6 +1,32 @@
 [
-    {"id": 1, "author": "John Doe", "title": "First Post",
-        "content": "This is my first post."},
-    {"id": 2, "author": "Jane Doe", "title": "Second Post",
-        "content": "This is another post."}
+  {
+    "id": 1,
+    "author": "John Doe",
+    "title": "First Post",
+    "content": "This is my first post."
+  },
+  {
+    "id": 2,
+    "author": "Jane Doe",
+    "title": "Second Post",
+    "content": "This is another post."
+  },
+  {
+    "id": 3,
+    "author": "bob",
+    "title": "the book",
+    "content": "was good\r\n"
+  },
+  {
+    "id": 4,
+    "author": "bobby",
+    "title": "the book 2",
+    "content": "was even better"
+  },
+  {
+    "id": 5,
+    "author": "man",
+    "title": "new book",
+    "content": "test input"
+  }
 ]

@@ -1,0 +1,8 @@
+<form method="POST" action="/add">
+    <label for="name">Enter the Book details:</label>
+    <input type="text" id="name" name="Author" placeholder="Author" required>
+    <input type="text" id="title" name="Title" placeholder="Title" required>
+    <textarea type="text" id="content" name="Content" placeholder="Content" required></textarea>
+    <button type="submit">Submit</button>
+</form>
+<div><a href="{{ url_for('index') }}">Back to Home</a></div>
