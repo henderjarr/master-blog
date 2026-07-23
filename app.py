@@ -32,5 +32,18 @@ def add():
     return render_template('add.html')
 
 
+@app.route('/delete/<int:post_id>', methods=['POST'])
+def delete(post_id):
+    for post in blog_posts:
+        if post['id'] == post_id:
+            blog_posts.remove(post)
+            break
+
+    with open('blog_posts.json', 'w', encoding='utf-8') as write_file:
+        json.dump(blog_posts, write_file, indent=2)
+
+    return redirect(url_for('index'))
+
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
